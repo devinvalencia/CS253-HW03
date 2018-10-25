@@ -18,7 +18,7 @@ class LinkListADT implements LinkList {
         return count;
     }
 
-    public void insertFirst (int newData) {
+    public void insertFirst (char newData) {
         Node newFirst = new Node (newData);
         newFirst.setNext(first);
         first = newFirst;

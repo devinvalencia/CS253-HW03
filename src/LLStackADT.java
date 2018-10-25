@@ -10,11 +10,9 @@ class LLStackADT implements LLStack {
     public boolean empty() {
         return (top == null);
     }
+    public int size() { return size; }
 
-    public int size() {
-        return size;
-    }
-    public void push (int number) {
+    public void push (char number) {
         Node newNode = new Node ();
         newNode.setData(number);
         newNode.setNext(top);
@@ -22,16 +20,16 @@ class LLStackADT implements LLStack {
         size++;
     }
 
-    public int pop () {
-        int i;
+    public char pop () {
+        char i;
         i = top.getData();
         top = top.getNext();
         size--;
         return i;
     }
 
-    public int ontop () {
-        int i = pop();
+    public char ontop () {
+        char i = pop();
         push(i);
         return i;
     }

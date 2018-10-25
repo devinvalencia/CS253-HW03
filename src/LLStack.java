@@ -1,8 +1,7 @@
 public interface LLStack {
-
-    public void push (int item);
-    public int pop();
+    public void push (char item);
+    public char pop();
     public int size();
     public boolean empty();
-    public int ontop();
+    public char ontop();
 }

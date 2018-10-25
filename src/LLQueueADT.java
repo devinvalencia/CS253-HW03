@@ -18,7 +18,7 @@ class LLQueueADT implements LLQueue {
         return size;
     }
 
-    public void enqueue (int number) {
+    public void enqueue (char number) {
         Node newNode = new Node ();
         newNode.setData(number);
         newNode.setNext(null);

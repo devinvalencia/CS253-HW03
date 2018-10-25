@@ -1,24 +1,24 @@
 class Node {
-    private int data;
+    private char data;
     private Node next;
 
     public Node () {
-        this(0, null);   }
+        this(' ', null);   }
 
-    public Node (int d) {
+    public Node (char d) {
         data = d;   }
 
-    public Node (int d, Node n) {
+    public Node (char d, Node n) {
         data = d;
         next = n;   }
 
-    public void setData (int newData) {
+    public void setData (char newData) {
         data = newData;   }
 
     public void setNext (Node newNext) {
         next = newNext;   }
 
-    public int getData () {
+    public char getData () {
         return data;   }
 
     public Node getNext () {
